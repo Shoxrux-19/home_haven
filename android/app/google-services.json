@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "688287415628",
+    "project_id": "homehaven-c0d5d",
+    "storage_bucket": "homehaven-c0d5d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688287415628:android:38162b32fbeb11801d23e9",
+        "android_client_info": {
+          "package_name": "com.example.furnuture_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW6vSOQpnrSRJnB94NkuAolWOsQu4y6P0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
