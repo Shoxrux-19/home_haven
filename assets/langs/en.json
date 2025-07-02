@@ -21,5 +21,22 @@
   "last_name": "Last Name",
   "terms_text": "By clicking Create Account, you acknowledge you have read and agree to our Terms of Use and Privacy Policy",
   "continue_google": "Continue with Google",
-  "continue_facebook": "Continue with Facebook"
+  "continue_facebook": "Continue with Facebook",
+  "celebrate_season": "Celebrate The Season With Us!",
+  "shop_now": "Shop Now",
+  "special_offers": "Special Offers",
+  "see_more": "See More",
+  "product_details": "Product Details",
+  "colors": "Colors",
+  "add_to_cart": "Add to Cart",
+  "my_cart": "My Cart",
+  "my_account": "My Account",
+  "home": "Home",
+  "general": "General",
+  "transaction": "Transaction",
+  "wishlist": "Wishlist",
+  "saved_address": "Saved Address",
+  "payment_methods": "Payment Methods",
+  "notification": "Notification",
+  "security": "Security"
 }

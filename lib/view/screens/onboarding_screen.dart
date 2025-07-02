@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:furnuture_app/core/utils/cache/cache_helper.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -277,8 +278,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         ),
                         const SizedBox(width: 15),
                         GestureDetector(
-                          onTap: () {
+                          onTap: () async {
                             if (selectedPage == 2) {
+                              await CacheHelper().cacheFirstTimer();
                               Navigator.pushNamed(context, "/login");
                             } else {
                               pageController.nextPage(

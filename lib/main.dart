@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:furnuture_app/core/utils/cache/cache_helper.dart';
+import 'package:furnuture_app/view/screens/accaunt_screen.dart';
+import 'package:furnuture_app/view/screens/cart_screen.dart';
+import 'package:furnuture_app/view/screens/home_screen.dart';
+import 'package:furnuture_app/view/screens/product_detail_screen.dart';
 import 'package:furnuture_app/view/screens/signin_screen.dart';
 import 'firebase_options.dart';
 import 'view/screens/splash_screen.dart';
@@ -10,6 +15,7 @@ import 'view/screens/onboarding_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
+  await CacheHelper().initCache();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(
@@ -32,11 +38,15 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
+      home: const SplashScreen(),
       routes: {
-        "/": (_) => const SplashScreen(),
         "/login": (_) => const LoginScreen(),
         "/register": (_) => const RegisterScreen(),
         "/onboarding1": (_) => const OnboardingScreen(),
+        "/home": (_) => const HomeScreen(),
+        "/detail": (_) => const ProductDetailScreen(),
+        "/cart": (_) => const CartScreen(),
+        "/accaunt": (_) => const AccauntScreen(),
       },
     );
   }
